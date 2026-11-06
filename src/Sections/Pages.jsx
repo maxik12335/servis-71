@@ -1,9 +1,7 @@
 import Navbar from "../Components/navbar/Navbar";
-import Faq from "./Faq/Faq";
+import About from "./About/About";
+import Footer from "./Footer/Footer";
 import Main from "./Main/Main";
-import Uslugy from "./Uslugy/Uslugy";
-import Price from "./Price/Price";
-import Contacts from "./Contacts/Contacts";
 
 const Pages = () => {
 
@@ -15,18 +13,11 @@ const Pages = () => {
       {/* main */}
         <Main />
 
-      {/* uslugy */}
-        <Uslugy />
+      {/* about */}
+      <About />
 
-      {/* price */}
-      <Price />
-
-      {/* Faq */}
-        <Faq />
-
-      {/* contacts */}
-      <Contacts />
-
+      {/* footer */}
+      <Footer />
     </div>
   )
 }

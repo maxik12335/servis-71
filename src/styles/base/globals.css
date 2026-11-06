@@ -9,7 +9,8 @@
 }
 
 .section--dark {
-  background-color: var(--color-background-dark);
+  /* background-color: var(--color-background-dark); */
+  background: linear-gradient(135deg, #3d105c 0%, rgb(0 0 0) 100%);
   color: var(--color-text-dark);
 }
 
@@ -103,7 +104,7 @@
 
 .container {
   max-width: 1140px;
-  padding: 100px 20px;
+  padding: 150px 20px;
   margin: 0 auto;
   min-height: 100vh;
 

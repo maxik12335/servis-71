@@ -1,18 +1,37 @@
 import classes from "./Main.module.css"
-import video from '../../assets/video.mp4'
+import mainImg from '../../assets/sofa-2.png'
 
 const Main = () => {
   return (
     <div className="section--dark line-light-section section-video"> 
       <div className="container">
-        <video className="video-fon" autoPlay muted loop id="background-video" poster="poster.jpg">
-          <source src={video} type="video/mp4" />
-        </video>
-        <div className={classes.content}>
-          <h1 className="h1">СЕРВИСНЫЙ ЦЕНТР</h1>
-          <h2 className="text-base">г. Алексин, ул. Ленина, д. 1Б, 2-ой этаж, офис 214</h2>
-          {/* <a className={`${classes.button} hover`} href="tel:89292947270">8-929-294-72-70</a> */}
-        </div>
+
+        <div className={`${classes.content} content`}>
+          <img className={classes.img} src={mainImg} alt="images Sofa" />
+
+          <div className={classes.textBox}>
+            <h2 className="h2">Та самая Софа...</h2>
+
+            <div className={classes.body}>
+              <p className="text-sm">
+                Небольшой отзыв от разработчика сайта на главном экране. Да сайт сделал я. Но речь об этой принцессе с вашего позволения
+              </p>
+
+              <p className="text-sm">
+                Думаю раз вы здесь, то вы тут не просто так. Это нормально. У всех есть боль, сомнения, страхи ... У меня был чертовски сложный период в жизни. И этот ангел помог мне обрести то что давно искал - покой и уверенность в себе
+              </p>
+
+              <p className="text-sm">
+                Я слишком упертый и вечно сомневающийся в себе человек... поэтому доходило долго. Где-то пол года. Но когда осознал о чем говорит эта прелесть. То ... жизнь стала налаживаться по щелчку пальцев
+              </p>
+
+              <p className="text-sm">
+                С любовью и уважением "разработчик" :D
+              </p>
+            </div>
+          </div>
+        </div>        
+
       </div>
     </div>
   )
